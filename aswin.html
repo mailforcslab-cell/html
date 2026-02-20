@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelle Schim | Mathematician Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .cv-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #3d3e42;
+            color: white;
+            padding: 60px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            position: relative;
+        }
+
+
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            overflow: hidden;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-text h1 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .header-text p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        aside {
+            flex: 1;
+            min-width: 320px;
+            background-color: #ede6de;
+            padding: 60px 40px;
+        }
+
+        main {
+            flex: 2;
+            min-width: 380px;
+            padding: 60px 50px;
+            background-color: #ffffff;
+        }
+
+        .sidebar-section,
+        .main-section {
+            margin-bottom: 40px;
+        }
+
+        .sidebar-section h2,
+        .main-section h2 {
+            font-size: 1.4rem;
+            text-transform: capitalize;
+            border-bottom: 1.5px solid #ccc;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .contact-item i {
+            color: #3d3e42;
+            margin-top: 4px;
+            width: 15px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+
+        .experience-item {
+            margin-bottom: 35px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 1.15rem;
+            display: block;
+        }
+
+        .job-date {
+            color: #777;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .experience-item ul {
+            padding-left: 20px;
+        }
+
+        .experience-item li {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 850px) {
+            .content {
+                flex-direction: column;
+            }
+
+            aside {
+                min-height: auto;
+                padding: 40px;
+            }
+
+            main {
+                padding: 40px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px;
+                gap: 20px;
+            }
+
+          
+
+            .header-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .profile-img {
+                width: 130px;
+                height: 130px;
+            }
+
+            main,
+            aside {
+                min-width: 100%;
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .header-text h1 {
+                font-size: 2rem;
+            }
+
+            .header-text p {
+                font-size: 1.1rem;
+            }
+
+            .sidebar-section h2,
+            .main-section h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv-container">
+        <header>
+            <div class="profile-img">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+                    alt="Kelle Schim">
+            </div>
+            <div class="header-text">
+                <h1>Aswin madhav k m</h1>
+                <p>Mathematician,stock trader,investment banker,actuarian</p>
+            </div>
+        </header>
+
+        <div class="content">
+            <aside>
+                <section class="sidebar-section">
+                    <h2>Contact Details</h2>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>kelleschim@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(888) 422 3664</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>East Oliver, 36956-7311, Indiana</span>
+                    </div>
+                </section>
+
+                <section class="sidebar-section">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <p><strong>Bachelor of Science in Mathematics</strong></p>
+                        <p>MIT</p>
+                        <p style="color: #666;">2017 - 2021</p>
+                    </div>
+                </section>
+
+                <section class="sidebar-section">
+                    <h2>Skills</h2>
+                    <ul class="skill-list">
+                        <li>Problem solving - Expert</li>
+                        <li>Data analysis - Expert</li>
+                        <li>Statistical methods - Expert</li>
+                        <li>Calculus - Expert</li>
+                        <li>Algebra - Expert</li>
+                        <li>Geometry - Expert</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <main>
+                <section class="main-section">
+                    <h2>Summary</h2>
+                    <p>Experienced Mathematician with 5+ years of hands-on experience in mathematical research and
+                        analysis. Skilled in developing complex algorithms and models to solve challenging problems.</p>
+                </section>
+
+                <section class="main-section">
+                    <h2>Work Experience</h2>
+
+                    <div class="experience-item">
+                        <span class="job-title">Mathematician, Fahey, Keebler and Carter</span>
+                        <span class="job-date">March 2023 - Present</span>
+                        <ul>
+                            <li>Conducted extensive research in the field of numerical analysis, specializing in
+                                nonlinear optimization.</li>
+                            <li>Developed algorithms for solving linear and nonlinear equations, including numerical
+                                integration and interpolation.</li>
+                            <li>Utilized MATLAB and R programming languages to develop and implement mathematical
+                                models.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <span class="job-title">Mathematician, Klein, Bosco and Davis</span>
+                        <span class="job-date">May 2021 - February 2023</span>
+                        <ul>
+                            <li>Collaborated with colleagues on projects involving Bayesian statistics, machine learning
+                                and artificial intelligence.</li>
+                            <li>Created mathematical proofs for theorems and conjectures in the fields of algebra,
+                                geometry, and topology.</li>
+                            <li>Instructed undergraduate and graduate students in discrete mathematics and linear
+                                algebra.</li>
+                        </ul>
+                    </div>
+                </section>
+
+
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>
